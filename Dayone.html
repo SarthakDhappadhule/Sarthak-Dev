@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>__Fill this form__</h1>
+    <form action="code.html" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter you Username" required>
+        </div>
+        <br>
+        <div>
+            <label for="gender"> Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        <br>
+        <div> 
+            <label for="reason">Reason:</label>
+            <select name="reason" placeholder="Select the reason">
+                <option value="reason1">New pipeline issue</option>
+                <option value="reason2">Existing Fault</option>
+                <option value="reason3">Electricity Cut issue</option>
+                <option value="reason4">Water Cut issue</option>
+                <option value="reason5">other</option>
+            </select>
+        </div>
+        <br>
+        <div> 
+            <label for="message">Describe Your Reason (optional) : </label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..." autofocus></textarea>
+        </div>
+        <hr>
+         <div>  
+            <input type="checkbox" id="terms and conditions" name="terms and conditions" value="agree" required>
+            <label for="terms and conditions">I agree to the terms and conditions</label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
