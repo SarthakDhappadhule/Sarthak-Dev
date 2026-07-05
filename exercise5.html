@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(221, 221, 221);
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: rgb(255, 255, 255);
+            padding: 15px 25px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: right;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav li {
+            cursor: pointer;
+        }
+
+        .boxes {
+            background-color: rgb(120, 120, 120);
+            border: 5px solid black;
+            display: flex;
+            width: 161vh;
+            height: 50vh;
+            margin: 25px;
+            padding: 25px;
+
+        }
+
+        .box1 {
+            background-color: aqua;
+            width: 85vh;
+            height: 40vh;
+            margin: 25px;
+            padding: 25px;
+            border: 2px solid black;
+
+        }
+
+        .box2 {
+            background-color: rgb(157, 255, 0);
+            width: 85vh;
+            height: 40vh;
+            margin: 25px;
+            padding: 25px;
+            border: 2px solid black;
+
+        }
+
+        .note {
+            display: flex;
+            justify-content: center;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 3px solid black;
+            border-radius: 15px;
+            padding: 10px 20px;
+            background-color: bisque;
+        }
+
+        .floating-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: right;
+            justify-content: right;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .floating-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .floating-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="boxes">
+        <div class="box1">i am a box</div>
+        <div class="box2">i am a box</div>
+    </div>
+    <div class="note">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cupiditate corporis dolores quas tempore
+            dolore praesentium aliquam, repellendus reprehenderit minus deleniti libero soluta, omnis autem.</p>
+    </div>
+    <div class="floating-icon">
+        <a href="www.google.com">
+            <img src="C:\Users\Sarthak Santosh\Downloads\exercise 3.jpg" alt="Icon">
+        </a>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sapiente voluptatum libero pariatur esse
+            dignissimos quos, repudiandae fugiat dolorum reiciendis consectetur, quo, saepe enim eum officia placeat.
+            Tenetur autem illo rem consectetur reprehenderit praesentium at libero perspiciatis, aperiam nihil
+            voluptatum, nam pariatur, labore totam quam vitae ea illum sed! Modi, eaque culpa quo natus illo eos! Error,
+            mollitia? Sunt odio aperiam nam corporis, vero quod in. Iste corporis, quod explicabo sunt quos ratione sed
+            est dolorem odit minima ipsa deleniti asperiores ducimus. Necessitatibus minima eveniet architecto at sunt
+            esse iure, quisquam sapiente repudiandae nobis obcaecati nesciunt animi aut, voluptas minus laboriosam
+            suscipit ullam odit numquam. Odio officia voluptatibus odit, ratione maiores a inventore, iste corporis hic
+            beatae voluptatum dolorum eius in earum accusamus rem, magnam sapiente doloribus laudantium quaerat. Quasi
+            labore facilis cupiditate harum possimus at, quam consequatur deserunt quaerat quae repellendus similique,
+            est corporis, nesciunt ipsam exercitationem ipsa sequi officiis assumenda pariatur? Velit incidunt officiis
+            ipsum, accusantium possimus dolor odit quas hic magni maiores illo cum harum alias, eius quasi voluptatibus!
+            Delectus eum iste beatae vitae, modi magni laborum, at molestiae ullam totam, sapiente quae assumenda!
+            Eligendi modi veniam voluptatum enim placeat velit, harum, fuga, est aspernatur alias laborum ea? Doloribus
+            libero neque, laudantium facere illo earum ex vero? Omnis nihil molestiae minima sit minus vero veritatis
+            quod. Voluptas reprehenderit qui architecto consequatur vel, aspernatur commodi nulla exercitationem soluta
+            tempore. Iste, repellat omnis? Rerum voluptate id reiciendis. Corrupti tempore voluptas modi reprehenderit
+            dolor libero eius, dolorem nisi laborum velit quam amet suscipit quis sit nihil itaque consequuntur odio
+            commodi recusandae animi molestias. Vitae cupiditate, minima incidunt magnam voluptates aperiam deserunt
+            soluta molestias quod porro voluptatum nostrum nobis perferendis illo blanditiis officiis quasi culpa id
+            maxime quaerat in, atque ut. Quos, aliquid. Ex enim temporibus velit, asperiores totam omnis cupiditate
+            veniam, architecto sed facilis in, magnam eum quidem consequatur magni accusantium cumque maxime beatae.
+            Dignissimos recusandae autem magni doloremque quibusdam laudantium. Molestias iste adipisci culpa fugiat
+            dolores beatae nihil, provident veniam officiis fuga. Ullam similique velit accusamus fugiat inventore ipsum
+            iste maxime, possimus hic, earum tempora tenetur nobis eaque! Ipsum nulla accusamus assumenda corrupti, esse
+            velit distinctio voluptates nostrum! Quae molestiae eos voluptas? Itaque blanditiis harum eaque aliquid
+            facilis non ipsa pariatur incidunt ea tempore molestiae eligendi consectetur dolorem, laborum accusamus
+            magnam est vitae! Adipisci laudantium enim hic in id a, consectetur quas odio quos odit temporibus obcaecati
+            repudiandae repellendus vel ipsum placeat vero numquam provident earum fuga beatae explicabo tempora? Ea
+            sunt incidunt qui? Molestiae, ratione? Dolores officia dolor hic modi. Possimus, aperiam nulla aliquid
+            impedit fuga ea aut veniam! Animi odio perferendis numquam repellat consequatur, eveniet explicabo dolorum
+            eaque cupiditate harum, accusantium rerum ea consectetur iusto a. Maxime architecto unde aut vel quasi.</p>
+    </div>
+</body>
+
+</html>

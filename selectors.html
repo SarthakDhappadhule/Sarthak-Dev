@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element selector */
+        h1 {
+            background-color: black;
+            color: white;
+            width: 130px;
+        }
+        /* class selector */
+        .red {
+            color: red;
+        }
+        /* id selector */
+        #blue {
+            color: blue;
+        }
+        /* child selector */
+        div > p {
+            color: green;
+        }
+        /* descendent selector */
+        /* div p {
+            font-size: 20px;
+            color: orange;
+        } */
+         
+       /* universal selector */
+
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* pseudo class selector  */
+
+           /* 1. Base style for all links (Valid background property) */
+        a {
+        background-color: rgb(255, 255, 0); /* Yellow background */
+        }
+
+        /* 2. Unvisited link (L) */
+        a:link {
+        color: rgb(0, 0, 255); /* Blue */
+        }
+
+        /* 3. Visited link (V) */
+        a:visited {
+        color: rgb(0, 255, 0); /* Green */
+        }
+
+        /* 4. Hover state - must come after link and visited (H) */
+        a:hover {
+        color: rgb(187, 0, 255); /* Purple */
+        }
+
+        /* 5. Active state - must come after hover (A) */
+        a:active {
+        color: rgb(255, 0, 0); /* Red */
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <p class="red">Selectors are used to select the HTML elements you want to style.</p>
+    <p id="blue">This paragraph has an ID of "blue".</p>
+
+    <div>
+        <p>This is a child element of the div.</p>
+        <!-- <main>
+            <p>This is a child element of the main.</p> 
+        </main> -->
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+
+
+</body>
+</html>

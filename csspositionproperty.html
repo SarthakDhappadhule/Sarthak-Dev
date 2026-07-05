@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Property</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+         .navbar {
+            display: flex;
+            position: sticky;
+            justify-content: space-between; /* Pushes logo left, links right */
+            align-items: center;            /* Vertically centers all items */
+            background-color: #333;         /* Dark background color */
+            padding: 15px 30px;             /* Padding around the navbar content */
+            font-family: Arial, sans-serif;
+        }
+
+        .logo a {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px; 
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+        .box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: green;
+            position: relative;
+            left: 79vw;
+            /* top: 50px; */
+        }
+
+        .box3 {
+            background-color: blue;
+        }
+
+        .box4 {
+            background-color: yellow;
+            position: relative;
+            left: 79vw;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+            border: 5px solid black;
+        }
+        .parent {
+            position: relative;
+            /* position: absolute;
+            position: fixed; */
+            background-color: lightgray;
+            border: 5px solid black; 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar Starts Here -->
+    <nav class="navbar">
+        <!-- Logo on the left side -->
+        <div class="logo">
+            <a href="#">MyLogo</a>
+        </div>
+
+        <!-- Navigation items on the right side -->
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
