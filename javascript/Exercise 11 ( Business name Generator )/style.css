@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 20px 80px;
+    border: 4px solid white;
+    color: white;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.title {
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.generator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 10px 50px;
+    border: 4px solid white;
+    color: white;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.title2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.arrow {
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: arrow-animation;
+    animation-duration: 1s;
+    /* animation-timing-function:  this problem solved by just removing this line 🤣😅*/
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes arrow-animation {
+    from {
+                transform: translateX(0vw) translateY(0vh);
+            }
+
+            to {
+                transform: translateX(0vw) translateY(10vh);
+            }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 10px 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 90px auto;
+    border-radius: 90px;
+}
