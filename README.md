@@ -1,6 +1,6 @@
 # Hi there, I'm Sarthak Dhappadhule! 👋
 
-I am a 16-year-old Computer Engineering Diploma student (2nd Year) passionate about building clean, efficient software. I balance my academic curriculum with self-taught modern web development to build a strong foundation as a Full-Stack Software Engineer. 
+I am a 17-year-old Computer Engineering Diploma student (2nd Year) passionate about building clean, efficient software. I balance my academic curriculum with self-taught modern web development to build a strong foundation as a Full-Stack Software Engineer. 
 
 This repository serves as a central hub for my college practicals, daily coding exercises, and major personal projects.
 
